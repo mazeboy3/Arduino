@@ -6,8 +6,6 @@
  *
  */
 
-
-
 // Geschwindigkeiten
 const int speedAdjustIn = A0;
 const int speedInput = A1;      // Geschwindigkeitseingang vom Daumengas
@@ -43,7 +41,6 @@ enum direction{
   left,
   warn
 }
-
 
 void setup() {
   pinMode(speedOutputL, OUTPUT);
@@ -81,7 +78,7 @@ void wheelControl(bool mode, bool gear){
   if (gear){
     digitalWrite(richtung, LOW);
   }else{
-    digitalW
+    digitalWrite(richtung, HIGH);
   }
 
   if (mode == true) {
