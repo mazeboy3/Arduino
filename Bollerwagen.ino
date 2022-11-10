@@ -9,7 +9,7 @@
 // Geschwindigkeiten
 const int speedAdjustIn = A0;
 const int speedInput = A1;      // Geschwindigkeitseingang vom Daumengas
-const int speedOutputL =  3;    // Geschwindigkeitsausgang zu Controller 1 (Fahrtrichtung Links)
+const int speedOutputL = 3;    // Geschwindigkeitsausgang zu Controller 1 (Fahrtrichtung Links)
 const int speedOutputR = 4;     // Geschwindigkeitsausgang zu Controller 2 (Fahrtrichtung Rechts)
 
 //Abschaltungen
@@ -40,7 +40,7 @@ enum direction{
   right,
   left,
   warn
-}
+};
 
 void setup() {
   pinMode(speedOutputL, OUTPUT);
