@@ -1,3 +1,32 @@
+/*
+Author: Marcel Thekook
+License: Free to use (Also in comerical use) (mentioning would be nice)
+
+Definition of Wires for controlling Purpose:
+#define BatteriePlus(+24V) 1
+#define Rückwärts 2
+#define Vorwärts 3
+#define Hupe(+24V) 4 
+#define Rot(Gashebel) 7
+#define Schwarz(Gashebel) 8
+#define Grün(Gashebel) 9
+#define Hupe (GND) 5
+#define Batterie(GND) 5
+Die anderen Kabel sollten nicht in Verwendung sein. Bitte Angaben Prüfen, Code kann veraltet sein
+*/
+
+/*
+Preconditions:
+Verwendet wird ein Digital zu Analog converter, der per I2C angesprochen wird.
+Model: 
+DS 18030-010	Digitalpoti, 2-Kanal, 256 Schritte, 10 kOhm, DIL-16	2	15,36 €
+(12,90 €  netto)
+MCP 4151-103E/P	Digitalpoti, 1-Kanal, 257 Schritte, 10 kOhm, DIP-8	2	2,60 €
+(2,18 €  netto)
+Reichelt
+Für weiteres Marcel fragen.
+*/
+
 #include <Wire.h>
 
 #define input_gas A0    // Eingang Daumengas
