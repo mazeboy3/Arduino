@@ -63,3 +63,7 @@ void writeSpeed(){
     Wire.endTransmission();     // stop transmitting
     }
   }
+
+void trimGas(){
+  
+}
